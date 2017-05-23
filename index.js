@@ -150,7 +150,7 @@ module.exports = (function () {
 	 * @param {string}	version		The version number.
 	 */
 	Config.prototype.setVersion = function (version) {
-		var regex = new RegExp('^[0-9]+.[0-9]+.[0-9]+$');
+		var regex = new RegExp('^[0-9]+.[0-9]+.[0-9a-zA-Z]+$');
 
 		if (!regex.test(version)) {
 			// If the version is not valid, throw an error.
